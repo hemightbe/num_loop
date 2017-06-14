@@ -1,0 +1,16 @@
+#! /bin/bash
+
+[ -e ./list.txt ] && rm ./list.txt
+
+echo -n "Enter Max Number:"
+read max_num
+
+echo -n "Enter Min Number:"
+read min_num
+
+for ((i = min_num; i <= max_num; i++));
+do
+ echo -n $i"," >> ./list.txt
+done
+
+sed 's/.$//' list.txt >> ./list.txt && cat ./list.txt
