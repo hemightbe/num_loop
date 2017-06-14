@@ -1,0 +1,7 @@
+#! /bin/bash
+ssh md " sudo chown -R osmc:osmc /media/Ganymede/ && \
+sudo chmod -R 777 /media/Ganymede/ && \
+find /media/Ganymede -name ".DS_Store" -exec rm -rf {} \;
+sudo chown -R osmc:osmc /media/Europa/ && \
+sudo chmod -R 777 /media/Europa/
+find /media/Europa -name ".DS_Store" -exec rm -rf {} \; "
