@@ -1,0 +1,6 @@
+#! /bin/bash
+find . -iname "* *" -print0 | xargs -r -0 rename 's/\ /./g'
+find . -iname "*)*" -print0 | xargs -r -0 rename 's/\)/./g'
+find . -iname "*(*" -print0 | xargs -r -0 rename 's/\(/./g'
+find . -iname "*[*" -print0 | xargs -r -0 rename 's/\]/./g'
+find . -iname "*]*" -print0 | xargs -r -0 rename 's/\]/./g'
