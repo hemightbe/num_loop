@@ -2,5 +2,5 @@
 
 for i in {A..Z}
 do
- touch ./files/$i
+ touch $i
 done
